@@ -1,0 +1,1 @@
+("8.18" ta6nt ("38cbee2b34fcce3c7365830efe37ac1cd46245f5" . "97ec5785311f704e7200385b9052feca1ab6f6ef") #"C:\\Users\\Gabriel\\Desktop\\pp\\graph\\config.rkt" (collects #"data" #"queue.rkt") (collects #"drracket" #"private" #"drracket-errortrace-key.rkt") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt"))

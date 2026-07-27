@@ -1,0 +1,1 @@
+("8.18" ta6nt ("590efeb2b8db2ff221a2bbeb82f1f0ce18b3370f" . "80e076f1735f8bba3652a59944bfd47ef5d6b900") #"C:\\Users\\Gabriel\\Desktop\\gabriel-isler\\graph\\adjacency-matrix.rkt" (collects #"drracket" #"private" #"drracket-errortrace-key.rkt") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt"))

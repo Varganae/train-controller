@@ -1,0 +1,1 @@
+("8.18" ta6nt ("19270ed9b30a35b57ea3036f451f794b63be8687" . "25ef212af5bb2b11a53a27afd8d7603fb8c901cd") #"C:\\Users\\Gabriel\\Desktop\\pp\\simulator\\railway.rkt" (collects #"drracket" #"private" #"drracket-errortrace-key.rkt") (collects #"racket" #"class.rkt") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt"))
