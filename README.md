@@ -1,17 +1,17 @@
 ```markdown
 # Model Train Control System (Programmeerproject 2)
 
-An automated model train control system implemented in **Racket/Scheme**[cite: 3, 4]. The software operates a digital model railway system based on the **Z21 protocol** over a local network or via an integrated virtual simulator[cite: 3, 4].
+An automated model train control system implemented in **Racket/Scheme**. The software operates a digital model railway system based on the **Z21 protocol** over a local network or via an integrated virtual simulator.
 
 ---
 
 ## 🏗️ System Architecture
 
-The project is built on a **Client-Server network architecture** using TCP communication (exchanging S-expressions) to enforce a strict separation between the user interface and track logic[cite: 3, 4]:
+The project is built on a **Client-Server network architecture** using TCP communication (exchanging S-expressions) to enforce a strict separation between the user interface and track logic:
 
-* **Infrabel (Server):** The core infrastructure engine[cite: 4]. It manages physical track elements (detection blocks, switches, signals, level crossings), computes automated routes, and guarantees network safety via a reservation system and proactive collision prevention[cite: 4].
-* **NMBS (Client / GUI):** The traffic control interface built with the Racket GUI Toolkit[cite: 3, 4]. It acts as a remote proxy sending network messages to Infrabel while maintaining a local client cache (`Railway-NMBS`) to ensure smooth UI rendering without network lag[cite: 4].
-* **Execution Facade:** A hardware abstraction layer enabling Infrabel to communicate interchangeably with either the virtual simulator or physical Z21 digital hardware over UDP[cite: 3, 4].
+* **Infrabel (Server):** The core infrastructure engine. It manages physical track elements (detection blocks, switches, signals, level crossings), computes automated routes, and guarantees network safety via a reservation system and proactive collision prevention[cite: 4].
+* **NMBS (Client / GUI):** The traffic control interface built with the Racket GUI Toolkit. It acts as a remote proxy sending network messages to Infrabel while maintaining a local client cache (`Railway-NMBS`) to ensure smooth UI rendering without network lag[cite: 4].
+* **Execution Facade:** A hardware abstraction layer enabling Infrabel to communicate interchangeably with either the virtual simulator or physical Z21 digital hardware over UDP.
 
 ```text
 [ NMBS Client / GUI ] <====== TCP (S-expressions) ======> [ Infrabel Server ]
@@ -121,9 +121,9 @@ The project is built on a **Client-Server network architecture** using TCP commu
 
 ```text
 train-controller/
-├── client.rkt               # Entry point for the NMBS Client GUI application[cite: 3, 4]
-├── server.rkt               # Entry point for the Infrabel Infrastructure Server[cite: 3, 4]
-├── gui.rkt                  # Tabbed user interface built with Racket GUI Toolkit[cite: 3, 4]
+├── client.rkt               # Entry point for the NMBS Client GUI application
+├── server.rkt               # Entry point for the Infrabel Infrastructure Server
+├── gui.rkt                  # Tabbed user interface built with Racket GUI Toolkit
 ├── infrabel.rkt             # Core Infrabel Server ADT[cite: 4]
 ├── nmbs.rkt                 # RPC Client Proxy ADT[cite: 4]
 ├── railway-nmbs.rkt         # Local client state shadow-cache ADT[cite: 4]
@@ -136,7 +136,7 @@ train-controller/
 ├── wissel.rkt               # Switch/point model ADT[cite: 4]
 ├── slagboom.rkt             # Level crossing gate ADT[cite: 4]
 ├── verkeerslicht.rkt        # Railway signal model ADT[cite: 4]
-├── constanten.rkt           # System constants and port configurations[cite: 3, 4]
+├── constanten.rkt           # System constants and port configurations
 ├── simulator/               # Built-in track layout and simulator interface files[cite: 3]
 └── hardware/                # Low-level Z21 UDP communication interface files[cite: 3]
 
